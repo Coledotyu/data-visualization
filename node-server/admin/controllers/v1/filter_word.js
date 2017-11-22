@@ -5,17 +5,6 @@ class FilterWordApi extends Api {
   
   constructor(ctx, next, cb) {
     super(ctx, next, cb)
-
-    //this.before([
-    //  'fetchWordListBefore', 
-    //  'createFilterWordBefore'
-    //])
-
-    //this.after([
-    //  'fetchWordListAfter',
-    //  'createFilterWordAfter'
-    //])
-
   }
 
   async fetchWordListBefore(ctx, next, cb) {

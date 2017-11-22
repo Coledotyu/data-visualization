@@ -59,14 +59,24 @@ npm run dev
 ### 三、R可视化
 
 ```
+cd R-GUI
 
+Rsript cloud.R
+Rsript cluster.R
+Rsript Emap.R
 ```
+* 词云图
+![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/R-cloud.png)
+* 聚类分析
+![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/R-cluster.png)
+* 迁徙图
+![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/R-Emap.png)
 
 ### 四、各方案对比
 
 ```
-1、superset开源免费，普通可视化需求直接查表即可实现零配置，但支持数据库有限，不能通过接口形式可视化，自由定制程度低
-2、vue + echarts可以实现各种形式数据可视化，无论功能和性能皆可高于superset，但需要前后端配合开发，成本比较大。
+1、superset开源免费，直接查表即可实现普通可视化，但支持数据库有限，不能通过接口形式可视化数据，自由定制程度低
+2、vue + echarts可以实现各种形式数据可视化，无论功能和性能皆可高于superset，但需要前后端配合开发，成本略大。
 3、R可视化方式对统计人员非常方便，可以直接做统计分析和机器学习模型训练，并实时生成各种模型图，但不方便自动化集成
 ```
 
