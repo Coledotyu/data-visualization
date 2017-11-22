@@ -5,6 +5,6 @@ services:
     ports: 
       - "8088:8088"
     volumes:
-      - /Users/dreamboad/Projects/data-visualization/superset/conf:/etc/superset
-      - /Users/dreamboad/Projects/data-visualization/superset/data:/data
+      - ./conf:/etc/superset
+      - ./data:/data
 

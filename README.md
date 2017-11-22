@@ -1,9 +1,10 @@
-### 数据可视化几种方案
+### 三种数据可视化方案
 
 ```
-  数据可视化是经过图形化手段将数据展示出来，以下是几种常用数据可视化方案。
+    数据可视化是经图形化手段将数据展示出来，依据数据及其内在模式和关系，利用计算机生成的图像来获得深入认识和知识，
+并起到帮助产品改进、运营监控等目的，可视化方案多种多样，如plotly、Gephi、R ggplot2等，以下介绍三种常用数据可视化工具。
 ```
-#### 一、Superset可视化
+#### 一、Superset
 
 * Superset搭建(推荐docker)
 
@@ -33,7 +34,7 @@ Repeat for confirmation:
 * 桑基图
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-sankey.png)
 
-### 二、Echarts可视化
+### 二、Echarts
 
 * vue + Echarts 搭建可视化
 
@@ -57,10 +58,20 @@ npm run dev
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/vue-admin-views.png)
 ### 三、R可视化
 
-### 各方案对比
+```
 
 ```
-1、superset可视化开源免费，普通可视化需求基本可以实现零配置，直接查表即可，但支持数据库有限，不能通过接口形式可视化，自由定制程度低
-2、vue + echarts可以实现各种形式数据可视化，无论功能和性能远高于superset，但是需要前后端开发，成本比较大。
-3、R可视化方式对统计人员非常方便，可以直接做统计分析和机器学习模型训练，并实时生成各种模型图，但不方便自动化集成等
+
+### 四、各方案对比
+
 ```
+1、superset开源免费，普通可视化需求直接查表即可实现零配置，但支持数据库有限，不能通过接口形式可视化，自由定制程度低
+2、vue + echarts可以实现各种形式数据可视化，无论功能和性能皆可高于superset，但需要前后端配合开发，成本比较大。
+3、R可视化方式对统计人员非常方便，可以直接做统计分析和机器学习模型训练，并实时生成各种模型图，但不方便自动化集成
+```
+
+### 五、参考
+
+*[superset](https://superset.incubator.apache.org/)
+*[R官网](https://www.r-project.org/)
+*[cran](https://cran.r-project.org/mirrors.html)
