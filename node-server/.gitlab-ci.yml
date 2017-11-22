@@ -1,0 +1,5 @@
+build:
+  script:
+    - sh build.sh
+  only:
+    - master
