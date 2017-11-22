@@ -1,20 +1,24 @@
-import axios from 'axios';
+import axios from 'axios'
+import config from '../config'
 
-let base = '';
 const instance = axios.create({
-	baseURL: 'http://127.0.0.1:3001'
+	baseURL: config.baseUrl
 }) 
 
-export const getWordListPage = params => { return instance.get('/filterword/fetchAll', { params: params }); };
+export const requestLogin = params => { return axios.post('/login', params).then(res => res.data) }
 
-export const requestLogin = params => { return axios.post(`${base}/login`, params).then(res => res.data); };
+export const getWordListPage = params => { return instance.get('filterword/fetchAll', { params: params }) }
 
-export const getUserList = params => { return axios.get(`${base}/user/list`, { params: params }); };
+export const removefilterWord = params => { return instance.delete('filterword/remove', { data: params }) }
 
-export const removeUser = params => { return axios.get(`${base}/user/remove`, { params: params }); };
+export const createfilterWord = params => { return instance.put('filterword/create', params) }
 
-export const batchRemoveUser = params => { return axios.get(`${base}/user/batchremove`, { params: params }); };
+export const getWordFreqList = params => { return instance.get('fetchAll/wordlist', { params: params }) }
 
-export const editUser = params => { return axios.get(`${base}/user/edit`, { params: params }); };
+export const getKeywordList = params => { return instance.get('search/keywordList', { params: params }) }
 
-export const addUser = params => { return axios.get(`${base}/user/add`, { params: params }); };
+export const searchFilterWord = params => { return instance.get('filterword/searchOne', { params: params }) }
+
+export const createResource = params => { return instance.put('resource/upload', params) }
+
+export const getResourceList = params => { return instance.get('resource/fetchList', { params: params }) }

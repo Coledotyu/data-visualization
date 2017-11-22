@@ -11,11 +11,11 @@ elasticsearch 需要配置中文分词ik
 
 引用docker: node-rscript:1.0, 安装docker: redis mongodb elasticsearch
 
-docker pull daocloud.io/baidao/node-rscript:1.0
+docker pull node-rscript:1.0
 
-docker run -p 6379:6379 -d daocloud.io/baidao/redis:latest
-docker run -p 27017:27017 -d daocloud.io/baidao/mongodb:3.5
-docker run -p 9200:9200 -d daocloud.io/baidao/elasticsearch:v1
+docker run -p 6379:6379 -d redis:latest
+docker run -p 27017:27017 -d mongodb:3.5
+docker run -p 9200:9200 -d elasticsearch:v1
 
 docker ps
 
@@ -34,7 +34,7 @@ node app.js
 
 ### 二、接口地址（待定）
 
-* http://test-stock-api.baidao.com:3001/
+* http://127.0.0.1:3001/
 
 ### 三、开发部署
 
@@ -44,4 +44,4 @@ node app.js
 * 3 首次build执行: sh build.sh
 * 4 登录测试服 创建并挂载项目目录
 * 5 登录gitlab 在setting中配置CI 
-* 6 测试: http://test-stock-api.baidao.com:8082/#/login
+* 6 测试: http://[hostname]:8082/#/login
