@@ -29,7 +29,7 @@ Repeat for confirmation:
 * 查看数据结果
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-query-results.png)
 * 力导向图
-![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/vue-admin/static/images/superset-directed-forced-layout.png)
+![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-directed-forced-layout.png)
 * 桑基图
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-sankey.png)
 
