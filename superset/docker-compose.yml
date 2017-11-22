@@ -1,0 +1,10 @@
+version: '2'
+services:
+  superset:
+    image: amancevice/caravel:latest
+    ports: 
+      - "8088:8088"
+    volumes:
+      - /Users/dreamboad/Projects/data-visualization/superset/conf:/etc/superset
+      - /Users/dreamboad/Projects/data-visualization/superset/data:/data
+

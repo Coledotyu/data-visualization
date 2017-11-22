@@ -5,12 +5,12 @@
 ```
 #### 一、Superset可视化
 
-* Superset搭建(推荐docker方式)
+* Superset搭建(推荐docker)
 
 ```
-docker pull amancevice/superset
+docker pull amancevice/caravel
 
-docker run -d -p 8088:8088 --name supersrt amancevice/superset:latest
+docker run -d -p 8088:8088 --name superset amancevice/caravel:latest
 
 docker exec -it superset demo // 设置管理员
 Username [admin]: amdin
@@ -36,11 +36,11 @@ Repeat for confirmation:
 ```
 git clone https://github.com/TIME-GATE/data-visualization.git
 
-cd data-visualization/node-server && npm run 
+cd data-visualization/node-server && npm install
 npm run start
 
-cd data-visualization/vue-client && npm run dev
-
+cd data-visualization/vue-client && npm install
+npm run dev
 ```
 
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/vue-admin-login.png)
