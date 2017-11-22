@@ -20,12 +20,17 @@ Email [admin@fab.org]: zq_sdk@163.com
 Password: 
 Repeat for confirmation:
 ```
-
+* 登录页面
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-login.png)
+* 主页面
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-main.png)
+* 查询数据 & 可视化
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-sql-editor.png)
+* 查看数据结果
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-query-results.png)
+* 力导向图
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/vue-admin/static/images/superset-directed-forced-layout.png)
+* 桑基图
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/superset-sankey.png)
 
 ### 二、Echarts可视化
@@ -42,10 +47,13 @@ npm run start
 cd data-visualization/vue-client && npm install
 npm run dev
 ```
-
+* 登录页面
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/vue-admin-login.png)
+* 主页面
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/vue-admin-main.png)
+* 词云图
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/vue-admin-cloud.png)
+* 各种图表展示
 ![image](https://github.com/TIME-GATE/data-visualization/blob/master/vue-client/static/images/vue-admin-views.png)
 ### 三、R可视化
 
